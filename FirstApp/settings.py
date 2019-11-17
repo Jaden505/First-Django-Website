@@ -25,7 +25,7 @@ SECRET_KEY = 'iq-3m$u=)-co4$p^=&sg8$6upkqhj369-2oge@(gh6@6@fz*37'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "127.0.0.1:8000", "firstdjangoherokuapp", "https://firstdjangoherokuapp.herokuapp.com/", "https://git.heroku.com/firstdjangoherokuapp.git"]
+ALLOWED_HOSTS = ["127.0.0.1", "127.0.0.1:8000", "firstdjangoherokuapp", "firstdjangoherokuapp.herokuapp.com"]
 
 # Application definition
 

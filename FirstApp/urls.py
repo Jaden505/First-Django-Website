@@ -17,10 +17,9 @@ from django.contrib import admin
 from django.urls import path
 
 from mainpage.views import home_view, additional_view
-from FirstApp.settings import ALLOWED_HOSTS
 
 urlpatterns = [
-    path(ALLOWED_HOSTS, home_view),
+    path('', home_view),
     path('home/', home_view),
     path('add-on/', additional_view),
     path('admin/', admin.site.urls),

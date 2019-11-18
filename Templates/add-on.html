@@ -1,3 +1,9 @@
 {% extends "base.html" %}
 
-{% block content %}add-on page{% endblock %}
+{% block title %}add-on page{% endblock %}
+
+{% block button %}
+<form method='get' action='/home'>
+    <input type="submit" value="home"/>
+</form>
+{% endblock %}

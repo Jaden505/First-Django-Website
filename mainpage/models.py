@@ -8,6 +8,7 @@ from django.db import models
 
 
 # Create your models here.
-class Name(models.Model):
+class Fields(models.Model):
     pass
     #Fields
+

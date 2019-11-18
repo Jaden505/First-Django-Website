@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="Templates/style.css">
     <title>Jaden-van-Rijswijk</title>
 </head>
 <body style="background-color:lightgrey;">
-<h1>Welcome to the {% block content %} {% endblock %}</h1>
-<form method='get' action='#'>
-    <input type="submit" value="Next" name="Next"/>
-</form>
+<h1>Welcome to the {% block title %} {% endblock %}</h1>
+{% block button %} {% endblock %}
 </body>
 </html>

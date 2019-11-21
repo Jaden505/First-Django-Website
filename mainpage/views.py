@@ -7,5 +7,5 @@ def home_view(request):
     return render(request, "main.html")
 
 def additional_view(request):
-    return render(request, "add-on.html")
+    return render(request, "login.html")
 

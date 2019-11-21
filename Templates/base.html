@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="Templates/style.css">
     <title>Jaden-van-Rijswijk</title>
 </head>
-<body style="background-color:lightgrey;">
-<h1>Welcome to the {% block title %} {% endblock %}</h1>
-{% block button %} {% endblock %}
+<body>
+
+{% block content %} {% endblock %}
+
+<style>
+    .title {
+    text-align: center;
+    color: black;
+    }
+</style>
+
 </body>
 </html>

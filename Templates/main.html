@@ -1,9 +1,57 @@
 {% extends "base.html" %}
 
-{% block title %}main page{% endblock %}
+{% block content %}
+<h1 style="font-size:7vw;" class="title">Welcome to my website</h1>
 
-{% block button %}
-<form method='get' action='/add-on'>
-    <input type="submit" value="add-on"/>
-</form>
+<div class="container">
+    <img src="http://www.pptbackgrounds.org/uploads/business-and-finance-animated-backgrounds-arrow-keys-with-businessman-backgrounds-wallpapers.jpg" alt="Gif desktop" width="1250" height="500" class="photo">
+    <p style="font-size:3vw;" class="banner">Jaden van Rijswijk</p>
+    <div class="centre">Centre</div>
+
+    <form method='get' action='/login'>
+        <input type="submit" value="login" class="round_button"/>
+    </form>
+</div>
+
+<style>
+
+    .container {
+    position: relative;
+    text-align: center;
+    color: grey;
+    }
+
+    .banner {
+        position: relative;
+    bottom: 500px;
+    left: center;
+    }
+
+    h1 {
+      font-style: normal;
+      background-color:
+    }
+
+    .title {
+        position: relative;
+    bottom: 30px;
+    left: -180px;
+    }
+
+  .round_button {
+  border-radius: 50%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }
+
+</style>
+
 {% endblock %}

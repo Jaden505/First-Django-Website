@@ -3,25 +3,12 @@
 {% block content %}
 <div class="container">
     <img src="http://www.pptbackgrounds.org/uploads/business-and-finance-animated-backgrounds-arrow-keys-with-businessman-backgrounds-wallpapers.jpg" alt="Gif desktop" width="1250" height="500" class="photo">
-    <p style="font-size:3vw;" class="banner">Jaden van Rijswijk</p>
+    <p style="font-size:4vw;" class="banner">Jaden van Rijswijk</p>
         <ul>
-            <h1 class="welcome">Hello and welcome to my website, i have made this site to introduce myself to people and show who I am and what my skills are. So please take a look around and enjoy.</h1>
+            <h1 class="welcome" style="font-size:2.6vw;">Hello and welcome to my website, i have made this site to introduce myself to people and show who I am and what my skills are. So please take a look around and enjoy.</h1>
         </ul>
-</div>
-
-    <form method='get' action='https://github.com/Jaden505/FirstApp'>
-        <input type="submit" value="github" class="round_button1"/>
-    </form>
-    <form method='get' action='/login'>
-        <input type="submit" value="login" class="round_button2"/>
-    </form>
-
-<h1>About Me:</h1>
-<ul>
-    <p style="font-size:1.5vw;" class="aboutme">My name is Jaden, I am 16 years old and live in the Netherlands</p>
-</ul>
-
-<h1>Programming languages:</h1>
+    </div>
+    <h1>Programming languages:</h1>
 <ul>
     <p style="font-size:1.5vw;" class="pg">
 
@@ -30,10 +17,42 @@
         Html-CSS
     </p>
 </ul>
+
+     <div class="images">
+        <ul>
+        <img src="https://freepngimg.com/thumb/python_logo/5-2-python-logo-png-image-thumb.png" alt="python" width="400" height="400" class="python">
+        <img src="https://i.pinimg.com/originals/3f/6e/c4/3f6ec446dd918554f22b774dbd5927c3.png" alt="django" width="400" height="400">
+            <img src="http://www.akoolitus.ee/images/html_css.png" alt="html-css" width="400" height="400">
+        </ul>
+     </div>
+
+<ul>
+<h1>About Me:</h1>
+<ul>
+    <p style="font-size:1.5vw;" class="aboutme">My name is Jaden, I am 16 years old and live in the Netherlands</p>
+</ul>
 <div class="one">Div one</div>
 <div class="two">Div two</div>
 
+        <form method='get' action='https://github.com/Jaden505/FirstApp'>
+        <input type="submit" value="github" class="round_button1"/>
+        </form>
+
+
+    <form method='get' action='/login'>
+        <input type="submit" value="login" class="round_button2"/>
+    </form>
+</ul>
 <style>
+    .images {
+    background-color: #E5E4E2;
+          margin: 50px 2px;
+    }
+
+    .welcome {
+        color: #585858;
+    }
+
     .one {
     padding: 50px; background-color: #BCC6CC; width: 100px; display: inline-block;
     }
@@ -55,30 +74,30 @@
     }
 
   .round_button1 {
-  border-radius: 50%;
-  background-color: #04B609;
+  border-radius: 30%;
+  background-color: #0E3416;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 50px;
   margin: 6px 2px;
   cursor: pointer;
     }
 
-   .round_button2 {
-  border-radius: 50%;
-  background-color: #04B609;
+    .round_button2 {
+  border-radius: 30%;
+  background-color: #0E3416;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
-  margin: 4px 2px;
+  font-size: 50px;
+  margin: 6px 2px;
   cursor: pointer;
     }
 

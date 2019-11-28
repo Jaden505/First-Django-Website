@@ -1,23 +1,49 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 style="font-size:7vw;" class="title">Welcome to my website</h1>
-
 <div class="container">
     <img src="http://www.pptbackgrounds.org/uploads/business-and-finance-animated-backgrounds-arrow-keys-with-businessman-backgrounds-wallpapers.jpg" alt="Gif desktop" width="1250" height="500" class="photo">
     <p style="font-size:3vw;" class="banner">Jaden van Rijswijk</p>
-    <div class="centre">Centre</div>
-
-    <form method='get' action='/login'>
-        <input type="submit" value="login" class="round_button"/>
-    </form>
+        <ul>
+            <h1 class="welcome">Hello and welcome to my website, i have made this site to introduce myself to people and show who I am and what my skills are. So please take a look around and enjoy.</h1>
+        </ul>
 </div>
 
+    <form method='get' action='https://github.com/Jaden505/FirstApp'>
+        <input type="submit" value="github" class="round_button1"/>
+    </form>
+    <form method='get' action='/login'>
+        <input type="submit" value="login" class="round_button2"/>
+    </form>
+
+<h1>About Me:</h1>
+<ul>
+    <p style="font-size:1.5vw;" class="aboutme">My name is Jaden, I am 16 years old and live in the Netherlands</p>
+</ul>
+
+<h1>Programming languages:</h1>
+<ul>
+    <p style="font-size:1.5vw;" class="pg">
+
+        Python
+        Django
+        Html-CSS
+    </p>
+</ul>
+<div class="one">Div one</div>
+<div class="two">Div two</div>
+
 <style>
+    .one {
+    padding: 50px; background-color: #BCC6CC; width: 100px; display: inline-block;
+    }
+
+    .two {
+    padding: 50px; background-color: #E5E4E2; display: inline-block;
+    }
 
     .container {
     position: relative;
-    text-align: center;
     color: grey;
     }
 
@@ -25,22 +51,26 @@
         position: relative;
     bottom: 500px;
     left: center;
+        text-align: center;
     }
 
-    h1 {
-      font-style: normal;
-      background-color:
-    }
-
-    .title {
-        position: relative;
-    bottom: 30px;
-    left: -180px;
-    }
-
-  .round_button {
+  .round_button1 {
   border-radius: 50%;
-  background-color: #4CAF50;
+  background-color: #04B609;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 2px;
+  cursor: pointer;
+    }
+
+   .round_button2 {
+  border-radius: 50%;
+  background-color: #04B609;
   border: none;
   color: white;
   padding: 20px;
@@ -51,6 +81,14 @@
   margin: 4px 2px;
   cursor: pointer;
     }
+
+   .aboutme {
+       color: darkgreen;
+   }
+
+   .pg {
+       color: darkgreen;
+   }
 
 </style>
 

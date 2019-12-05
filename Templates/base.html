@@ -1,18 +1,27 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Jaden-van-Rijswijk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+<div class="container">
+    {% block content %} {% endblock %}
 
-{% block content %} {% endblock %}
+    {% if user.is_authenticated %}
+        <p>You are logged in</p>
+    {% else %}
+       <p>You are not logged in</p>
+        {% endif %}
 
-<style>
-    .title {
-    text-align: center;
-    color: black;
-    }
-</style>
-
+    <form class="logout-link" method="POST" action="/logout/">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+    </form>
+</div>
 </body>
 </html>

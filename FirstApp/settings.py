@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # My own apps
     'mainpage',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -119,5 +120,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = list((os.path.join(BASE_DIR + 'staticfiles')))
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

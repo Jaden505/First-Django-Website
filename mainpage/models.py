@@ -6,10 +6,11 @@ from django import forms
 
 
 class Addition(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField(blank=False)
-    password = models.CharField(max_length=50)
+    name_todo = models.CharField(max_length=100)
+    description_todo = models.TextField(blank=True)
+    deadline_todo = models.DateTimeField()
+    email_notification = models.BooleanField()
 
     def __str__(self):
-        info = str(self.name) + str(self.email) + str(self.password)
+        info = str(self.name_todo) + str(self.description_todo) + str(self.deadline_todo)
         return info

@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 from mainpage.models import Addition
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
+from . import forms
 
 
 # Create your views here.

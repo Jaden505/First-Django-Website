@@ -2,20 +2,20 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<form method='get' action='/home'>
-    <input type="submit" value="home"/>
-</form>
-<form method='get' action='/login'>
-    <input type="submit" value="login"/>
-</form>
-<form method='get' action='/logout'>
-    <input type="submit" value="logout"/>
-</form>
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">Register</h1>
+</header>
 <br>
+
 <form method="POST" class="form">
+    <h3>
     {{ form|crispy }}
-    {% csrf_token %}
+    </h3>
+        {% csrf_token %}
     <br>
+    <h4>
     <input type="submit" value="Sign up">
+    </h4>
 </form>
 {% endblock %}

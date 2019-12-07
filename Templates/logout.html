@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 
-<form method='get' action='/home'>
-    <input type="submit" value="home"/>
-</form>
-<form method='get' action='/register'>
-    <input type="submit" value="register"/>
-</form>
-<form method='get' action='/login'>
-    <input type="submit" value="login"/>
-</form>
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">Logout</h1>
+</header>
+<br>
+<h4>You are now logged out. <a onclick="goBack()"><u>Go back</u></a>.</h4>
 {% endblock %}

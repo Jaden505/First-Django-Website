@@ -46,14 +46,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
          </form>
 
          {% if user.is_authenticated %}
-                 <form method="get" action="/login">
+                            <form method="get" action="/logout">
+    <button class="w3-bar-item w3-button w3-padding-large">Logout</button>
+                         </form>
+
+         {% else %}
+     <form method="get" action="/login">
     <button class="w3-bar-item w3-button w3-padding-large">Login</button>
                  </form>
 
-         {% else %}
-                         <form method="get" action="/logout">
-    <button class="w3-bar-item w3-button w3-padding-large">Logout</button>
-                         </form>
             {% endif %}
                                  <form method="get" action="/">
      <button class="w3-bar-item w3-button w3-padding-large">About me</button>
@@ -81,9 +82,10 @@ u {
  cursor: pointer;
 }
 
-.image_python {
-width: 900px;
-height: auto;
+.center {
+position: absolute;
+left: 850px;
+top: 550px;
 }
 
 </style>

@@ -12,13 +12,13 @@ from . import forms
 
 # Create your views here.
 def home_view(request):
-    return render(request, "main.html")
+    form = AuthenticationForm(data=request.POST)
+    user = form.get_user()
+    return render(request, "main.html", {'form': user})
 
 @login_required(login_url="/login/")
 def logout_view(request):
-    if request.method == 'POST':
-        logout(request)
-        return redirect('/')
+    logout(request)
     return render(request, "logout.html")
 
 
@@ -29,7 +29,7 @@ def login_view(request):
              # Log user in
              user = form.get_user()
              login(request, user)
-             return redirect("/login/")
+             return redirect("/")
     else:
         form = AuthenticationForm()
     return render(request, "login.html", {'form': form})

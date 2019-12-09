@@ -1,0 +1,1 @@
+/usr/bin/setuids.d

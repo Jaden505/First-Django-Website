@@ -1,0 +1,1 @@
+/usr/libexec/postfix/set_credentials.sh

@@ -1,0 +1,1 @@
+/usr/libexec/postfix/mk_postfix_spool.sh

@@ -1,0 +1,1 @@
+/usr/bin/stty5.18.pl

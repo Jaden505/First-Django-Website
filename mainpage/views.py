@@ -46,3 +46,6 @@ def register_view(request):
     else:
         form = UserCreationForm()
     return render(request, "register.html", {'form': form})
+
+def projects_view(request):
+    return render(request, "projects.html")

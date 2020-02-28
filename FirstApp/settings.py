@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'iq-3m$u=)-co4$p^=&sg8$6upkqhj369-2oge@(gh6@6@fz*37'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "127.0.0.1:8000", "firstdjangoherokuapp", "firstdjangoherokuapp.herokuapp.com"]
 
@@ -123,10 +123,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = list((os.path.join(BASE_DIR + 'staticfiles')))
+STATICFILES_DIRS = list((os.path.join(BASE_DIR + '/CSS/style.css')))
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
